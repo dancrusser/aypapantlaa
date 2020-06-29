@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!--lang="en" sirve para el idioma a espanol-->
+<html lang="es">
+<head>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	
+    <!--Link para llamar los estilos de bootstrap.min.css-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="img/Logotipo2.png"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src = "js/jquery.flexslider.js"> </script>
+    <script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+    	touch: true,
+    	pauseOnAction: false,
+    	pauseOnHover: false,
+    });
+    });
+    </script>
+
+	<title>Ay Papantla | La Ropa que tu Prefieres</title>
+</head>
+
+<body>
+
+	<!--Aqui empieza el menu de navegacion-->
+	<nav class="menu" id="menu">
+		<!--Este div contendra los botones de menu y cerrar en la visualizacion responsive-->
+		<div class="contenedor contenedor-botones-menu">
+			<button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
+			<button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
+		</div>
+		<!--Este div contendra los enlaces y el boton de departamentos-->		
+		<div class="contenedor contenedor-enlaces-nav">
+			<!--Este div contendra el boton de departamentos-->
+			<div class="btn-departamentos" id="btn-departamentos">
+				<img src="img/Logotipo.PNG" alt="" class="logotipo">
+				<p>Todos los <span>Departamentos</span></p>
+				<i class="fas fa-caret-down"></i>
+			</div>
+			<!--Este div contendra los enlaces-->
+			<div class="enlaces">
+				<a href="Pagina Inicio.html" alt="Inicio"><i class="fas fa-home"></i></a>
+				<a href="#"><i class="fas fa-user"></i></a>
+				<a href=""><i class="fas fa-shopping-bag"></i></a>
+				<a href=""><i class="fas fa-hands-helping"></i></a>
+			</div>
+
+		</div>
+		<!--Este div contendra las categorias del menu de navegacion-->
+		<div class="contenedor contenedor-grid">
+			<!--Este div solo se trabajara con cssgrid-->
+			<div class="grid" id="grid">
+
+				<div class="categorias">
+
+					<button class="btn-regresar"><i class="fas fa-arrow-left"> Regresar</i></button>
+					<h3 class="subtitulo">Categorias</h3>
+
+					<a href="#" data-categoria="Hombre">Hombre <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="Mujer">Mujer <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="Niños">Niños <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="Niñas">Niñas <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="Zapatos-y-Accesorios">Zapatos y Accesorios <i class="fas fa-angle-right"></i></a>
+
+				</div>
+				<!--Este div contendra las subcategorias-->
+				<div class="contenedor-subcategorias">
+
+					<div class="subcategoria" data-categoria="Hombre">
+
+						<div class="enlaces-subcategoria">
+							
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							
+							<h3 class="subtitulo">Hombre</h3>
+							
+							<a href="#">Camisetas</a>
+							<a href="#">Camisas</a>
+							<a href="#">Pantalones</a>
+							<a href="#">Sudaderas</a>
+							<a href="#">Conjuntos</a>
+							<a href="#">Shorts</a>
+
+						</div>
+
+						<div class="banner-subcategoria">
+							
+							<a href="#">
+								<img src="img/banner.jpg" alt="">
+							</a>
+
+						</div>
+
+						<div class="galeria-subcategoria">
+
+							<a href="#">
+								<img src="img/Galeria-1.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-2.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-3.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-4.jpg" alt="">
+							</a>
+
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="Mujer">
+
+						<div class="enlaces-subcategoria">
+							
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							
+							<h3 class="subtitulo">Mujer</h3>
+							
+							<a href="#">Blusas</a>
+							<a href="#">Camisetas</a>
+							<a href="#">Traje de baño</a>
+							<a href="#">Vestidos</a>
+							<a href="#">Pantalones</a>
+							<a href="#">Abrigos y Chaquetas</a>
+
+						</div>
+
+						<div class="banner-subcategoria">
+							
+							<a href="#">
+								<img src="img/banner 2.1.jpg" alt="">
+							</a>
+
+						</div>
+
+						<div class="galeria-subcategoria">
+
+							<a href="#">
+								<img src="img/Galeria-2.1.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-2.2.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-2.3.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-2.4.jpg" alt="">
+							</a>
+
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="Niños">
+
+						<div class="enlaces-subcategoria">
+							
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							
+							<h3 class="subtitulo">Niños</h3>
+							
+							<a href="#">Abrigos y chaquetas</a>
+							<a href="#">Camisas</a>
+							<a href="#">Sudaderas</a>
+							<a href="#">Pantalones</a>
+							<a href="#">Pijamas</a>
+							
+						</div>
+
+						<div class="banner-subcategoria">
+							
+							<a href="#">
+								<img src="img/banner 3.1.jpg" alt="">
+							</a>
+
+						</div>
+
+						<div class="galeria-subcategoria">
+
+							<a href="#">
+								<img src="img/Galeria-3.1.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-3.2.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-3.3.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-3.4.jpg" alt="">
+							</a>
+
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="Niñas">
+
+						<div class="enlaces-subcategoria">
+							
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							
+							<h3 class="subtitulo">Niñas</h3>
+							
+							<a href="#">Abrigos y chaquetas</a>
+							<a href="#">Camisas</a>
+							<a href="#">Sudaderas</a>
+							<a href="#">Pantalones</a>
+							<a href="#">Pijamas</a>
+							<a href="#">Vestidos</a>
+
+						</div>
+
+						<div class="banner-subcategoria">
+							
+							<a href="#">
+								<img src="img/banner 4.1.jpg" alt="">
+							</a>
+
+						</div>
+
+						<div class="galeria-subcategoria">
+
+							<a href="#">
+								<img src="img/Galeria-4.1.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-4.2.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-4.3.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-4.4.jpg" alt="">
+							</a>
+
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="Zapatos-y-Accesorios">
+
+						<div class="enlaces-subcategoria">
+							
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							
+							<h3 class="subtitulo">Zapatos y Accesorios</h3>
+							
+							<a href="#">Gorros</a>
+							<a href="#">Mochilas</a>
+							<a href="#">Cangureras</a>
+							<a href="#">Zapatos</a>
+							
+						</div>
+
+						<div class="banner-subcategoria">
+							
+							<a href="#">
+								<img src="img/banner 5.1.jpg" alt="">
+							</a>
+
+						</div>
+
+						<div class="galeria-subcategoria">
+
+							<a href="#">
+								<img src="img/Galeria-5.1.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-5.2.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-5.3.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="img/Galeria-5.4.jpg" alt="">
+							</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+    <!--Aqui empieza el contenido-->
+	<main class="contenedor">
+		<article>
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="img/carrusel-1.jpg" alt="">
+						<section class="flexcaption"></section>
+					</li>
+					<li>
+						<img src="img/carrusel-2.jpg" alt="">
+						<section class="flexcaption"></section>
+					</li>
+					<li>
+						<img src="img/carrusel-3.jpg" alt="">
+						<section class="flexcaption"></section>
+					</li>
+					<li>
+						<img src="img/carrusel-4.jpg" alt="">
+						<section class="flexcaption"></section>
+					</li>
+				</ul>
+			</div>
+            <main class="container">
+            	<div class="row">
+            		<div class="col s12 center-align">
+            			<h1 class="titulo">Nuevos Productos</h1>
+            		</div>
+            	</div>
+            	<div class="row galeria">
+            		<div class="col s12 m4 l3">
+            			<div class="material-placeholder">
+            				<img src="img/Catalogo-hombre-1.jpg" class="responsive-img" alt="">
+            				<p class="descripcion">Camiseta beisbol</p>
+							<h3 class="precio">$ 1</h3>
+							<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N48YSYCTS677G"><button class="Lo quiero">Comprar</button></a>
+							<div class="row galeria">
+								<div class="col s12 m4 l3">
+									<div class="material-placeholder">
+										<img src="img/hombre-2.jpg" class="responsive-img" alt="">
+										<p class="descripcion">Camiseta beisbol</p>
+										<h3 class="precio">$ 1</h3>
+										<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N48YSYCTS677G"><button class="Lo quiero">Comprar</button></a>
+										<div class="row galeria">
+											<div class="col s12 m4 l3">
+												<div class="material-placeholder">
+													<img src="img/hombre-3.jpg" class="responsive-img" alt="">
+													<p class="descripcion">Camiseta beisbol</p>
+													<h3 class="precio">$ 1</h3>
+													<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N48YSYCTS677G"><button class="Lo quiero">Comprar</button></a>
+													<div class="row galeria">
+														<div class="col s12 m4 l3">
+															<div class="material-placeholder">
+																<img src="img/hombre-4.jpg" class="responsive-img" alt="">
+																<p class="descripcion">Camiseta beisbol</p>
+																<h3 class="precio">$ 1</h3>
+																<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N48YSYCTS677G"><button class="Lo quiero">Comprar</button></a>
+																<div class="row galeria">
+																	<div class="col s12 m4 l3">
+																		<div class="material-placeholder">
+																			<img src="img/hombre-5.jpg" class="responsive-img" alt="">
+																			<p class="descripcion">Camiseta beisbol</p>
+																			<h3 class="precio">$ 1</h3>
+																			<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N48YSYCTS677G"><button class="Lo quiero">Comprar</button></a>
+																			<div class="row galeria">
+																				<div class="col s12 m4 l3">
+																					<div class="material-placeholder">
+																						<img src="img/hombre-6.jpg" class="responsive-img" alt="">
+																						<p class="descripcion">Camiseta beisbol</p>
+																						<h3 class="precio">$ 1</h3>
+																						<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N48YSYCTS677G"><button class="Lo quiero">Comprar</button></a>
+																						<div class="row galeria">
+																							<div class="col s12 m4 l3">
+																								<div class="material-placeholder">
+																									<img src="img/hombre-7.jpg" class="responsive-img" alt="">
+																									<p class="descripcion">Camiseta beisbol</p>
+																									<h3 class="precio">$ 1</h3>
+																									<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N48YSYCTS677G"><button class="Lo quiero">Comprar</button></a>
+																									<div class="row galeria">
+																										<div class="col s12 m4 l3">
+																											<div class="material-placeholder">
+																												<img src="img/hombre-8.jpg" class="responsive-img" alt="">
+																												<p class="descripcion">Camiseta beisbol</p>
+																												<h3 class="precio">$ 1</h3>
+																												<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N48YSYCTS677G"><button class="Lo quiero">Comprar</button></a>
+																												<div class="row galeria">
+																													<div class="col s12 m4 l3">
+																														<div class="material-placeholder">
+																															<img src="img/hombre-9.jpg" class="responsive-img" alt="">
+																															<p class="descripcion">Camiseta beisbol</p>
+																															<h3 class="precio">$ 1</h3>
+																															<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N48YSYCTS677G"><button class="Lo quiero">Comprar</button></a>
+																															<div class="row galeria">
+																																<div class="col s12 m4 l3">
+																																	<div class="material-placeholder">
+																																		<img src="img/hombre-10.jpg" class="responsive-img" alt="">
+																																		<p class="descripcion">Camiseta beisbol</p>
+																																		<h3 class="precio">$ 1</h3>
+																																		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N48YSYCTS677G"><button class="Lo quiero">Comprar</button></a>
+            				
+            			</div>
+            		</div>
+            	</div>
+            </main>
+		</article>
+	</main>
+	<!--Script para llamar los iconos de fontAwesome-->
+	 <script src="https://kit.fontawesome.com/d1c4fa7b1b.js" crossorigin="anonymous"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!--Script para llamar la libreria jquery-->
+	 <script src="js/bootstrap.min.js"></script>
+     
+</body>
+</html>
